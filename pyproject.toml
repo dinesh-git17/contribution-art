@@ -20,14 +20,18 @@ classifiers = [
 ]
 
 [project.scripts]
-contribution-writer = "writer:main"
+contribution-writer = "contribution_writer.cli:main"
 
 [project.urls]
-Repository = "https://github.com/dinesh-git17/contribution-art"
+Repository = "https://github.com/dinesh-git17/github-contribution-writer"
+Documentation = "https://github.com/dinesh-git17/github-contribution-writer#readme"
 
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.pylint.messages_control]
 max-line-length = 100

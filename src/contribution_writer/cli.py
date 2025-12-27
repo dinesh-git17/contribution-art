@@ -11,7 +11,13 @@ import subprocess
 import sys
 from datetime import datetime, timedelta
 
-from font import CHAR_SPACING, CHAR_WIDTH, FONT, print_grid, word_to_grid
+from contribution_writer.font import (
+    CHAR_SPACING,
+    CHAR_WIDTH,
+    FONT,
+    print_grid,
+    word_to_grid,
+)
 
 
 def get_year_start_sunday(year: int) -> datetime:
@@ -207,9 +213,9 @@ def main() -> None:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python writer.py "HELLO" --year 2025 --dry-run
-  python writer.py "DINESH" --year 2025
-  python writer.py "2025" --year 2025 --no-center
+  contribution-writer "HELLO" --year 2025 --dry-run
+  contribution-writer "DINESH" --year 2025
+  contribution-writer "2025" --year 2025 --no-center
         """,
     )
     parser.add_argument("word", help="The word to draw (A-Z, 0-9, max ~8 chars)")
