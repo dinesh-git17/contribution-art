@@ -149,3 +149,7 @@ MIT License. See LICENSE file for details.
 ## Contributing
 
 Contributions are welcome. Please open an issue to discuss proposed changes before submitting a pull request.
+
+--- 
+
+Made with ♥️ for the community 
